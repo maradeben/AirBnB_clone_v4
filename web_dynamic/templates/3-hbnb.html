@@ -13,7 +13,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 	<!-- JavaScript -->
-	<script type="text/javascript" src="../static/scripts/2-hbnb.js?{{ cache_id }}"></script>
+	<script type="text/javascript" src="../static/scripts/3-hbnb.js?{{ cache_id }}"></script>
 
     <title>HBnB</title>
   </head>
@@ -62,7 +62,7 @@
       <section class="places">
 	<!-- <h1>Places</h1> -->
 	{% for place in places %}
-	<article>
+	<!--article>
 	  <div class="title_box">
 	    <h2>{{ place.name }}</h2>
 	    <div class="price_by_night">${{ place.price_by_night }}</div>
@@ -78,7 +78,7 @@
           <div class="description">
 	    {{ place.description | safe }}
           </div>
-	</article>
+	</article-->
 	{% endfor %}
       </section>
     </div>
